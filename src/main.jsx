@@ -4,9 +4,9 @@ import './index.css'
 import { FronteggProvider } from '@frontegg/react';
 
 const contextOptions = {
-  baseUrl: 'https://app-i34jv10zcath.frontegg.com',
-  clientId: '39863d4b-b805-40a2-b19d-efc4ea3ec697', 
-  appId: '25043dc5-edee-4a4c-bb13-1eee5506875a'
+  baseUrl: import.meta.env.VITE_FRONTEGG_BASE_URL,
+  clientId: import.meta.env.VITE_FRONTEGG_CLIENT_ID,
+  appId: import.meta.env.VITE_FRONTEGG_APP_ID
 };
 
 const authOptions = {
